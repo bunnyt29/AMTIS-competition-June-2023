@@ -1,0 +1,630 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a, h1, h2, h3, h4, h5, h6, p{
+    font-family: 'Manrope', sans-serif;
+}
+
+h1{
+    font-size: 60px;
+    color: #2E2EC8;
+    letter-spacing: -2px;
+}
+
+h6{
+    font-size: 37px;
+    color: #2E2EC8;
+}
+
+h2{
+    font-size: 48px;
+    color: #191B24;
+    font-weight: 700;
+}
+
+h3{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+h5{
+    font-size: 21px;
+    color: #1E1E1E;
+}
+
+.special{
+    font-weight: 700;
+}
+
+body{
+    background-color: #f3f4f6;
+}
+
+header{
+    padding: 40px 80px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.vector{
+    position: absolute;
+    z-index: -1;
+    right: 0%;
+    width: 50%;
+    top: -60px;
+}
+
+.vector-home{
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 200px;
+}
+
+.nav-titles{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.nav-titles img{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+p{
+    font-size: 16px;
+    color: #272A39;
+    line-height: 25.6px;
+}
+
+ul{
+    overflow:hidden;
+}
+
+li{
+    display:inline-block;
+    margin-left: 32px;
+}
+
+.nav-button{
+    display: inline-block;
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 207px;
+    height: 51px;
+    border-radius: 32px;
+    padding: 16px 32px;
+    border-color: #2E2EC8;
+    background-color: #FFFFFF;
+    color: #2E2EC8;
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.bluebtn{
+    background-color: #2E2EC8;
+    color: white;
+}
+
+.widerbtn{
+    width: 290px;
+    margin-top: 24px;
+}
+
+.home{
+    position: relative;
+    height: auto;
+    margin-top: 40px;
+    margin: 0px 80px;
+    margin-bottom: 96px;
+    background-color: #FFFFFF;
+    border-radius: 32px;
+    display: flex;
+}
+
+.home-text{
+    width: 850px;
+    padding: 112px 96px;
+}
+
+.home-text p{
+    line-height: 25.6px;
+    padding-top: 16px;
+    margin-bottom: 48px;
+}
+
+.title-element{
+    padding: 24px 0;
+}
+.home-image {
+    min-height: 100%;
+}
+.home-image img{
+    width: 100%;
+    min-height: 100%;
+}
+
+.features{
+    display: grid;
+    padding: 40px 80px;
+    grid-gap: 32px;
+    grid-template-columns: auto auto auto;
+    margin-bottom: 55.82px;
+}
+
+.features-box{
+    background-color: #FFFFFF;
+    padding: 64px 32px 48px 32px;
+    border-radius: 32px;
+}
+
+.features-box h3{
+    width: 60%;
+    line-height: 32.78px;
+    padding-bottom: 8px;
+}
+
+.questions{
+    position: relative;
+    background-color: #00D5AE;
+    padding: 96px 190px;
+}
+
+.questions-boxes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+}
+
+.questions-boxes img{
+    position: absolute;
+    left: 60%;
+    top: 10%;
+    width: 35%;
+}
+
+.questions h2{
+    color: #FFFFFF;
+}
+
+.questions-box{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 32px;
+    padding: 48px 32px;
+}
+
+.questions-box-components{
+    display: flex;
+    gap: 15px;
+}
+
+.questions-text{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.questions-text h5{
+    width: 60%;
+    line-height: 28.35px;
+}
+
+.number h4{
+    font-size: 90px;
+    font-weight: 200;
+    color: #F5BD01;
+}
+
+.two-four{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.t-e-two{
+    padding-bottom: 61px;
+}
+
+.clients-slider{
+    position: relative;
+    padding: 90px 0px 211.8px 80px;
+}
+
+.vector-clients{
+    position: absolute;
+    z-index: -1;
+    bottom: 180px;
+    width: 28%;
+    left: 0;
+}
+
+.vector-clients-2{
+    position: absolute;
+    right: 0;
+    width: 28%;
+    top: 0;
+    z-index: -1;
+}
+
+.clients{
+    display: flex;
+    gap: 32px;
+}
+
+.client-information{
+    margin-top: 56px;
+    padding: 48px 32px;
+    width: 30%;
+    background-color: #FFFFFF;
+    border-radius: 32px;
+}
+
+.name{
+    font-weight: 700;
+}
+
+.person{
+    width: 20%;
+    padding-bottom: 20px;
+}
+
+.description{
+    padding:10px 0px 20px 0;
+}
+
+.under-image{
+    z-index: -1;
+    overflow: hidden;
+    left: 70px;
+    position: relative;
+    display: block;
+}
+
+.contact{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 96px 0px 96px 0px;
+    background-color: #2E2EC8;
+    border-radius: 32px;
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.contact-info h2{
+    color: #FFFFFF;
+}
+
+.contact-info p{
+    color: white;
+}
+
+.contact-info img{
+    padding-top: 10px;
+    padding-bottom: 45px;
+    width: 10%;
+}
+
+.dates{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 15px;
+    margin: 17.4px 0px;
+}
+
+input{
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    height: 42px;
+    border: none;
+}
+
+.longer{
+    width: 100%;
+}
+
+.email{
+    margin-bottom: 17.4px;
+}
+
+.person-1{
+    position: absolute;
+    width: 15%;
+    top: 35px;
+    left: -50px;
+}
+
+.person-2{
+    position: absolute;
+    width: 15%;
+    bottom: -5px;
+    right: -50px;
+}
+
+.formbtn{
+    margin-top: 40px;
+    width: 235px;
+}
+
+.formbtn img{
+    padding: 0;
+}
+
+.letters{
+    padding: 80px 142px;
+}
+
+.letters p{
+    color: #f3f4f6;
+    text-shadow:
+	   -1px -1px 0 #000,  
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		 1px 1px 0 #000;
+    font-size: 101px;
+    line-height: 101px;
+    font-weight: 700;
+}
+
+.colored-p{
+    color: #F591CE;
+}
+
+@supports((text-stroke: 2px #F591CE) or (-webkit-text-stroke: 2px black)) {
+    .letters p {
+        color: transparent;
+        -webkit-text-stroke: 2px #F591CE;
+		text-stroke: 2px #F591CE;
+        text-shadow: none;
+    }
+}
+
+.QA{
+    display: flex;
+    background-color: white;
+    padding: 96px 64px;
+    margin: 164px 80px;
+    border-radius: 32px;
+}
+
+.QA-title{
+    width: 30%;
+}
+
+.dropdown-menu{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu h5{
+    font-weight: 700;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.dropdown-menu:hover .dropdown-content{
+    display: block;
+}
+
+.menus{
+    margin-left: 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer{
+    background-color: #FFFFFF;
+    padding: 48px 0;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.links{
+    margin-top: 48px;
+    display: flex;
+    gap: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    ul{
+        display: none;
+    }
+
+    .vector{
+        display: none;
+    }
+
+    .vector-home{
+        display: none;
+    }
+
+    header{
+        padding: 20px 40px;
+    }
+    .nav-titles img{
+        width: 100%;
+    }
+
+    .nav-button{
+        display: none;
+    }
+
+    .home{
+        width: 80%;
+        flex-direction: column-reverse;
+        background-size: cover;
+        margin: 0 auto;
+    }
+
+    h1{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    h6{
+        text-align: center;
+    }
+
+    .special{
+        font-size: 30px;
+    }
+
+    .home-text{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home-text p{
+        text-align: center;
+    }
+
+    .features{
+        grid-template-columns: auto;
+    }
+
+    .questions{
+        padding: 20px 20px;
+    }
+
+    .questions-boxes img{
+        display: none;
+    }
+
+    .questions-text h5{
+        width: 100%;
+    }
+
+    .vector-clients{
+        display: none;
+    }
+
+    .vector-clients-2{
+        display: none;
+    }
+
+    .clients{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .client-information{
+        width: 80%;
+    }
+
+    .clients-slider{
+        padding: 0;
+    }
+
+    .QA{
+        flex-direction: column-reverse;
+    }
+
+    .person-1{
+        display: none;
+    }
+
+    .person-2{
+        display: none;
+    }
+
+    .contact{
+        width: 100%;
+    }
+
+    h2{
+        font-size: 30px;
+    }
+
+    .longer{
+        width: 80%;
+    }
+
+    .contact-info{
+        padding: 0 20px;
+    }
+  }
